@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- App CSS -->
+    <link href="app.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark opacity-75 fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Background image -->
+        <div class="intro overlay">
+            <div class="container d-flex align-items-center h-100">
+                <div class="text-white">
+                    <h1 class="display-5 fw-bolder">Travel & Explore the World</h1>
+                    <h3 class="mt-5">Discover your favourite place with us</h3>
+                    <a href="#" class="btn btn-outline-success fw-bold shadow-lg">BOOK MY TOUR</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Main layout-->
+    <main>
+        <!--Search Form-->
+        <section class="container">
+            <div class="search-form">
+                <form class="row g-3" action="#" method="post">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <label for="destination" class="form-label">Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <label for="check-in" class="form-label">Check In</label>
+                        <input type="date" class="form-control" id="check-in">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <label for="check-out" class="form-label">Check Out</label>
+                        <input type="date" class="form-control" id="check-out">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <label for="person" class="form-label">Person</label>
+                        <select class="form-select" id="person">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                        </select>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mt-auto">
+                        <button type="submit" class="btn btn-success w-100">Check Availability</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--Services Area-->
+        <section class="container p-5">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row g-3 p-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#198754"
+                                 class="bi bi-airplane-engines" viewBox="0 0 16 16">
+                                <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0ZM7 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1c.213 0 .458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7V3Z"/>
+                            </svg>
+                        </div>
+                        <div class="col-10">
+                            <h3>Air Ticketing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.</p>
+                            <a href="#" class="text-success text-decoration-none">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#198754"
+                                 viewBox="0 0 576 512">
+                                <path d="M192 32c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32V64h48c26.5 0 48 21.5 48 48V240l44.4 14.8c23.1 7.7 29.5 37.5 11.5 53.9l-101 92.6c-16.2 9.4-34.7 15.1-50.9 15.1c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-16.2 0-34.7-5.7-50.9-15.1l-101-92.6c-18-16.5-11.6-46.2 11.5-53.9L96 240V112c0-26.5 21.5-48 48-48h48V32zM160 218.7l107.8-35.9c13.1-4.4 27.3-4.4 40.5 0L416 218.7V128H160v90.7zM306.5 421.9C329 437.4 356.5 448 384 448c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 501.7 417 512 384 512c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 437.2 165.1 448 192 448c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"/>
+                            </svg>
+                        </div>
+                        <div class="col-10">
+                            <h3>Cruises</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.</p>
+                            <a href="#" class="text-success text-decoration-none">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#198754"
+                                 class="bi bi-bus-front-fill" viewBox="0 0 16 16">
+                                <path d="M16 7a1 1 0 0 1-1 1v3.5c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2V8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1V2.64C1 1.452 1.845.408 3.064.268A43.608 43.608 0 0 1 8 0c2.1 0 3.792.136 4.936.268C14.155.408 15 1.452 15 2.64V4a1 1 0 0 1 1 1v2ZM3.552 3.22A43.306 43.306 0 0 1 8 3c1.837 0 3.353.107 4.448.22a.5.5 0 0 0 .104-.994A44.304 44.304 0 0 0 8 2c-1.876 0-3.426.109-4.552.226a.5.5 0 1 0 .104.994ZM8 4c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.304 44.304 0 0 0 8 4Zm-3 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm8 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-7 0a1 1 0 0 0 1 1h2a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"/>
+                            </svg>
+                        </div>
+                        <div class="col-10">
+                            <h3>Tour Packages</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.</p>
+                            <a href="#" class="text-success text-decoration-none">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Destination Area-->
+        <section class="container px-lg-5 py-5">
+            <div class="text-center mb-5">
+                <h2 class="font-weight-light text-black">Popular Destination</h2>
+                <p class="text-muted">Choose Your Next Destination</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                <div class="col">
+                    <div class="card custom-card text-white border-info border-3 h-100">
+                        <img src="images/new_york.jpg" class="card-img" alt="Image">
+                        <div class="card-img-overlay card-img-title">
+                            <h5 class="card-title">New York, USA</h5>
+                        </div>
+                        <a href="#" class="card-img-overlay"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card custom-card text-white border-info border-3 h-100">
+                        <img src="images/london.jpg" class="card-img" alt="Image">
+                        <div class="card-img-overlay card-img-title">
+                            <h5 class="card-title">London, UK</h5>
+                        </div>
+                        <a href="#" class="card-img-overlay"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card custom-card text-white border-info border-3 h-100">
+                        <img src="images/dubai.jpg" class="card-img" alt="Image">
+                        <div class="card-img-overlay card-img-title">
+                            <h5 class="card-title">Dubai, UAE</h5>
+                        </div>
+                        <a href="#" class="card-img-overlay"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card custom-card text-white border-info border-3 h-100">
+                        <img src="images/brazil.jpg" class="card-img" alt="Image">
+                        <div class="card-img-overlay card-img-title">
+                            <h5 class="card-title">Rio de Janeiro, Brazil</h5>
+                        </div>
+                        <a href="#" class="card-img-overlay"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card custom-card text-white border-info border-3 h-100">
+                        <img src="images/paris.jpg" class="card-img" alt="Image">
+                        <div class="card-img-overlay card-img-title">
+                            <h5 class="card-title">Paris, France</h5>
+                        </div>
+                        <a href="#" class="card-img-overlay"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card custom-card text-white border-info border-3 h-100">
+                        <img src="images/rome.jpg" class="card-img" alt="Image">
+                        <div class="card-img-overlay card-img-title">
+                            <h5 class="card-title">Rome, Italy</h5>
+                        </div>
+                        <a href="#" class="card-img-overlay"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-success btn-lg shadow-lg">Discover More</button>
+            </div>
+        </section>
+        <!--Subscribe Area-->
+        <section class="subscribe_area overlay">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-5 text-white">
+                                <h4>Subscribe Our Newsletter</h4>
+                                <p>Subscribe newsletter to get offers and about
+                                    new places to discover.</p>
+                            </div>
+                            <div class="col-lg-7">
+                                <form action="#" method="post" class="row g-4">
+                                    <div class="col-lg-9 col-md-8">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Your mail">
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <button type="submit" class="btn btn-success btn-lg">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About Area-->
+        <section class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="images/about.jpg" alt="..."></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h2 class="display-4">About Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
+                            sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                            voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Tourist Feedback-->
+        <section class="p-5 bg-light">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="display-6 mb-5 fw-bolder text-center">Tourist Feedback</h2>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="images/person.jpg" class="img-fluid rounded-circle">
+                                            </div>
+                                            <div class="col-8">
+                                                <p class="text-primary">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                                                <p>— John Doe</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+                                            accusamus,
+                                            facilis! Placeat praesentium alias porro aperiam facilis accusantium
+                                            veniam?”
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="images/person.jpg" class="img-fluid rounded-circle">
+                                            </div>
+                                            <div class="col-8">
+                                                <p class="text-primary">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                                                <p>— John Doe</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+                                            accusamus,
+                                            facilis! Placeat praesentium alias porro aperiam facilis accusantium
+                                            veniam?”
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="images/person.jpg" class="img-fluid rounded-circle">
+                                            </div>
+                                            <div class="col-8">
+                                                <p class="text-primary">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                                                <p>— John Doe</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+                                            accusamus,
+                                            facilis! Placeat praesentium alias porro aperiam facilis accusantium
+                                            veniam?”
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section area-->
+        <section class="container py-5">
+            <h2 class="text-center py-5">It's time to start your adventure</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card text-bg-dark h-100">
+                        <img src="images/activities.jpg" class="card-img" alt="...">
+                        <div class="card-img-title-animate bounce btn btn-success opacity-75">
+                            <p>TOURS & ACTIVITIES</p>
+                            <a href="#" class="text-white">Find your next big adventure</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark h-100">
+                        <img src="images/inspiration.jpg" class="card-img" alt="...">
+                        <div class="card-img-title-animate bounce btn btn-success opacity-75">
+                            <p>NEED INSPIRATION?</p>
+                            <a href="#" class="text-white">Check out our travel blog!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark h-100">
+                        <img src="images/insurance.jpg" class="card-img" alt="...">
+                        <div class="card-img-title-animate bounce btn btn-success opacity-75">
+                            <p>TRAVEL INSURANCE</p>
+                            <a href="#" class="text-white">Discover our insurance plans</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer class="bg-dark">
+        <div class="container pt-5 px-5">
+            <h3 class="border-bottom border-success text-white mb-5">Get In Touch</h3>
+            <div class="row justify-content-between my-5">
+                <div class="col">
+                    <p><a href="mailto:ramez.betrus@johnabbottcollege.net" class="text-success">
+                        ramez.betrus@johnabbottcollege.net</a></p>
+                </div>
+                <div class="col text-end social">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                             class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                             class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                             class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                             class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary py-3">
+            <p class="text-center text-white"><small>Copyright &#169; 2022 by Ramez Betrus</small></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
